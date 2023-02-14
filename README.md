@@ -4,4 +4,12 @@ A set of basic Kerbal Operating System Scripts made for the game Kerbal Space Pr
 
 Current Scripts
 
- - Basic Launch Script from Kerbin
+ - Basic Launching Script for Kerbin
+ - Basic Landing Script for Kerbin
+
+
+TODO Scripts
+
+ - Script for doing maneuvers
+ - Landing & Launching for other planets
+ - single Land & Launch scripts that calls scripts depending on current SOI planet 
