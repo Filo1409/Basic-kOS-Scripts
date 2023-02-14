@@ -1,3 +1,5 @@
+// TODO: compute if launch is possible with given deltav (on given targetapoapsis)
+
 parameter targetapoasis is 80000.
 parameter direction is 90.
 
@@ -38,4 +40,4 @@ lock throttle to (10 - eta:apoapsis) * 0.2.
 lock steering to heading(direction, max(0, 10 - eta:apoapsis)).
 
 wait until ship:status = "ORBITING".
-print "ship is " + ship:status.
+print "ship is " + ship:status + " on " + orbit:body:name.

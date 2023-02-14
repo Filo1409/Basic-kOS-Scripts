@@ -26,12 +26,13 @@ when tostage then {
 
 lock steering to srfRetrograde.
 
-wait until vang(ship:facing, steering) < 2.
+wait until vang(ship:facing:forevector, steering:forevector) < 2.
 
 lock throttle to 1.
 wait until ship:periapsis < 0.
 lock throttle to 0.
 wait 0.
+set tostage to true.
 
 WHEN (NOT CHUTESSAFE) THEN {
     CHUTESSAFE ON.
