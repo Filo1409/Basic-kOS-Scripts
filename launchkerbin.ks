@@ -20,7 +20,6 @@ when tostage then {
     stage.
     set tostage to false.
 
-    // is this the last stage?
     if (ship:stagenum = 1) {
         return false.
     } else {
@@ -40,11 +39,3 @@ lock steering to heading(direction, max(0, 10 - eta:apoapsis)).
 
 wait until ship:status = "ORBITING".
 print "ship is " + ship:status.
-
-
-
-// function fuelEmpty {
-//     print stage:liquidfuel.
-//     print stage:solidfuel.
-//     return stage:liquidfuel < 0.1 and stage:solidfuel < 0.1.
-// }
