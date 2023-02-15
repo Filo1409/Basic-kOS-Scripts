@@ -17,3 +17,4 @@ TODO Scripts
 
  - Landing & Launching for other planets
  - single Land & Launch scripts that calls scripts depending on current SOI planet 
+ - Suicide burn for MUN
