@@ -27,7 +27,6 @@ when tostage then {
 wait until vang(steering, ship:facing:vector) < 1.
 
 lock maxAcc to ship:maxthrust/ship:mass.
-// lock burnDuration to nextNode:deltav:mag/maxAcc.
 set dv0 to nextNode:deltav.
 
 wait until nextNode:eta <= 0.
