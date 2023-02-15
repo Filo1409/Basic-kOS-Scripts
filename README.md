@@ -12,6 +12,7 @@ TODO in Current Scripts
 
  - optimize landing script so acc direction is not hard coded?
  - compute if deltav is enough for maneuver / action (land, launch, ...)
+ - add time warping
 
 TODO Scripts
 
