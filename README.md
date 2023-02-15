@@ -6,8 +6,12 @@ Current Scripts
 
  - Basic Launching Script for Kerbin
  - Basic Landing Script for Kerbin
-  - Script for doing maneuvers
+ - Script for doing maneuvers
 
+TODO in Current Scripts
+
+ - optimize landing script so acc direction is not hard coded?
+ - compute if deltav is enough for maneuver / action (land, launch, ...)
 
 TODO Scripts
 
