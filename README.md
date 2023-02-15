@@ -6,10 +6,10 @@ Current Scripts
 
  - Basic Launching Script for Kerbin
  - Basic Landing Script for Kerbin
+  - Script for doing maneuvers
 
 
 TODO Scripts
 
- - Script for doing maneuvers
  - Landing & Launching for other planets
  - single Land & Launch scripts that calls scripts depending on current SOI planet 
