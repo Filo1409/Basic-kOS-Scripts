@@ -27,9 +27,9 @@ when tostage then {
 wait until vang(steering, ship:facing:vector) < 1.
 
 lock maxAcc to ship:maxthrust/ship:mass.
-set dv0 to nextNode:deltav.
 
 wait until nextNode:eta <= 0.
+set dv0 to nextNode:deltav.
 
 lock throttle to min(nextNode:deltav:mag/max(maxAcc, 0.000001), 1).
 
