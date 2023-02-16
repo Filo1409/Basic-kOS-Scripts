@@ -2,6 +2,8 @@
 
 A set of basic Kerbal Operating System Scripts made for the game Kerbal Space Program.
 
+The scripts only work for specific types of rockets
+
 Current Scripts
 
  - Basic Launching Script for Kerbin
