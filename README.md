@@ -8,6 +8,8 @@ Current Scripts
 
  - Basic Launching Script for Kerbin
  - Basic Landing Script for Kerbin
+ - Basic Launching Script for Mun (& Minmus)
+ - Basic Landing Script for Mun (& Minmus)
  - Script for doing maneuvers
 
 TODO in Current Scripts
