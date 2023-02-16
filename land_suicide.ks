@@ -1,3 +1,6 @@
+// Script to land on a planet with no atmosphere,
+// to work efficiently the trajectory to the body should be as straight (perpendicular to surface) as possible
+
 parameter shipheight to 6.
 
 if (ship:availablethrust = 0) stage.
