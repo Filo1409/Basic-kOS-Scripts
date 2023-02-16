@@ -1,19 +1,15 @@
-wait until periapsis < 0.
-
 lock steering to srfRetrograde.
 
 set tostage to true.
 
 when tostage then {
+    if (ship:stagenum = 1) {
+        return false.
+    }
+
     wait until stage:ready.
     print "staging ...".
     stage.
-
-    if (ship:stagenum = 1) {
-        return false.
-    } else {
-        return true.
-    }
 }
 
 WHEN (NOT CHUTESSAFE) THEN {
