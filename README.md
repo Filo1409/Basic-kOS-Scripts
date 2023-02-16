@@ -2,6 +2,8 @@
 
 A set of basic Kerbal Operating System Scripts made for the game Kerbal Space Program.
 
+The scripts only work for specific types of rockets
+
 Current Scripts
 
  - Basic Launching Script for Kerbin
@@ -12,6 +14,8 @@ TODO in Current Scripts
 
  - optimize landing script so acc direction is not hard coded?
  - compute if deltav is enough for maneuver / action (land, launch, ...)
+ - add time warping
+ - make maneuver script more accurate
 
 TODO Scripts
 
