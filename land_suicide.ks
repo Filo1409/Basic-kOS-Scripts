@@ -8,14 +8,15 @@ if (ship:availablethrust = 0) stage.
 lock steering to srfRetrograde.
 
 lock maxAcc to ship:availableThrust/ship:mass.
+set gravityForceOfBody to constant():g * (body:mass / body:radius^2).
 
 lock radarAltitude to ship:altitude - ship:geoposition:terrainheight - shipheight.
 
-lock brakingDistVert to ship:velocity:surface:mag^2 / (2 * (maxAcc - constant():g * (body:mass / body:radius^2))).
+lock brakingDist to ship:velocity:surface:mag^2 / (2 * (maxAcc - gravityForceOfBody)).
 
 ON TIME:SECOND {
   CLEARSCREEN.
-  PRINT "brakingDistVert: " + brakingDistVert.
+  PRINT "brakingDistVert: " + brakingDist.
   PRINT "ship speed: " + ship:velocity:surface:mag.
   PRINT "maxAcc: " + maxAcc.
   PRINT "gravtitational acc: " + constant():g * (body:mass / body:radius^2).
@@ -24,7 +25,7 @@ ON TIME:SECOND {
   return true.
 }
 
-lock t to brakingDistVert / radarAltitude.
+lock t to brakingDist / radarAltitude.
 wait until t > 1.
 lock throttle to t.
 
